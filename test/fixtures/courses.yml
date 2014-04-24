@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  school_id: 
+  name: MyString
+  level: MyString
+  year: 1
+  status: MyString
+
+two:
+  user_id: 
+  school_id: 
+  name: MyString
+  level: MyString
+  year: 1
+  status: MyString

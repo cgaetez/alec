@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alec - Aplicaciones para la Lectura, escritura y Creatividad</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" id="color" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+         
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><h5>OKAPI GAMES</h5></a></li>
+
+          
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+        <!-- Begin page content -->
+    <div class="container">
+     <div class="page-header">
+	  	  
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Sector Lenguaje APP</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">	
+		<li><%= link_to image_tag('Inicio.png',:class => "img-nav" ) + "INICIO", root_path %></li>
+		<li><%= link_to image_tag('Perfil.png',:class => "img-nav") + "PERFIL", users_path %></li>
+		<li><%= link_to image_tag('Miscursos.png',:class => "img-nav") + "MIS CURSOS", courses_path  %></li>
+        <li><%= link_to image_tag('Mistareas.png',:class => "img-nav") + 'MIS TAREAS', homeworks_path  %></li>
+        <li><%= link_to image_tag('Contacto.png',:class => "img-nav") + "CONTACTO", contacts_path %></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		
+</div>
+
+
+
+<%= yield %>
+
+
+  </div> <!--container-->
+  <div id="footer">
+      <div class="container">
+        <p class="text-muted">2014</p>
+      </div>
+    </div>
+
+
+</body>
+</html>

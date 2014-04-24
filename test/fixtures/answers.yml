@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  student_id: 
+  homework_id: 
+  page_id: 
+  content: MyText
+  status: MyString
+
+two:
+  student_id: 
+  homework_id: 
+  page_id: 
+  content: MyText
+  status: MyString
